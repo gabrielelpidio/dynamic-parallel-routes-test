@@ -11,12 +11,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  header,
+  footer,
 }: Readonly<{
   children: React.ReactNode;
+  header: React.ReactNode;
+  footer: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className + " p-3 flex flex-col gap-2 min-h-screen"}
+      >
+        {header}
+        {children}
+        {footer}
+      </body>
     </html>
   );
 }
