@@ -5,7 +5,7 @@ const Page = ({ ...props }) => {
   console.log(props, "page");
   return (
     <PageWrapper>
-      <RouteDetails name="app/[[...path]]/page.tsx" {...props} />
+      <RouteDetails name="app/settings/[...setting]/page.tsx" {...props} />
     </PageWrapper>
   );
 };
