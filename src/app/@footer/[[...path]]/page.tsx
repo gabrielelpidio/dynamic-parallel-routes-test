@@ -5,7 +5,10 @@ const Page = (props: any) => {
   console.log(props, "footer");
   return (
     <footer className="flex gap-2 border-dashed rounded p-4 border-green-500 border flex-col">
-      <div className="grid grid-cols-4 gap-2 max-w-max">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 max-w-max">
+        <Link href="/" className="text-blue-500">
+          Home
+        </Link>
         <Link href="/unmatched-route" className="text-blue-500">
           Unmatched Route (WORKS!)
         </Link>
