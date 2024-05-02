@@ -1,6 +1,6 @@
 import RouteDetails from "@/app/_components/route-details";
 
-const Default = ({ ...props }) => {
+const Default = (props: any) => {
   console.log(props, "header");
   return (
     <header className="flex gap-2 border-dashed rounded p-4 border-fuchsia-500 border flex-col">

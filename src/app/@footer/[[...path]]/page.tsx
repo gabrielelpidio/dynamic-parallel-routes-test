@@ -1,7 +1,7 @@
 import RouteDetails from "@/app/_components/route-details";
 import Link from "next/link";
 
-const Page = ({ ...props }) => {
+const Page = (props: any) => {
   console.log(props, "footer");
   return (
     <footer className="flex gap-2 border-dashed rounded p-4 border-green-500 border flex-col">
