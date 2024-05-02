@@ -6,6 +6,9 @@ const Page = (props: any) => {
   return (
     <footer className="flex gap-2 border-dashed rounded p-4 border-green-500 border flex-col">
       <div className="grid grid-cols-4 gap-2 max-w-max">
+        <Link href="/unmatched-route" className="text-blue-500">
+          Unmatched Route (WORKS!)
+        </Link>
         <Link href="/about" className="text-blue-500">
           About
         </Link>
